@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate en CSM</title>
+    <link rel="stylesheet" href="./styleregis.css">
+</head>
+<body>
+    <h1>Crea una cuenta</h1>
+    
+    <p id="error-message_register" style="color: red;"></p>  
+
+    <form name="registro" method="post" action="/cgi-bin/registro.pl">
+        <input type="text" name="email" id="email" placeholder="Correo Electronico" required>
+        <input type="text" name="username" id="username"placeholder="Nombre de Usuario" required>
+        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+        <input type="checkbox" id="verificacion">
+        <label for="verificacion">Estoy de acuerdo con los <a href="Terminos_Condiciones.html">Terminos y Condiciones</a></label>
+        <input type="submit" value="Registrarte">
+        <p><a href="/CSM/login.html">¿Ya tienes una cuenta?</a></p>
+    </form>
+    <script src="js/Funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    display:grid;
+    background-image: url("./imgs slide/delivery-man-over-isolated-yellow-600nw-1642368934.png");
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: 57%;
+    background-position: 620px;
+    background-repeat: no-repeat;
+    background-color: #ffd030;
+}
+
+h1 {
+    text-align: center; 
+    color: #333; 
+    flex-direction: column;
+    margin-top: -30px;
+    padding: 0;
+    margin-right: 116px;
+}
+
+#error-message_login {
+    text-align: center; 
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(43, 23, 23, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin-left: 450px;
+    margin-top: -400px;
+
+}
+
+form input[type="text"],
+form input[type="submit"],
+form button {
+    margin: 20px 0;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    box-sizing: border-box; 
+    
+}
+
+form input[type="submit"],
+form button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #60cc65; 
+}
+form input[type="password"],
+form button{
+    margin-top: 22px;
+    margin-bottom: 10px 20px 10px 15px;
+    padding-right: 105px;
+    padding-top: 9px;
+    padding-bottom: 9px ;
+    box-sizing: border-box; 
+}
+label{
+    font-size: 1.Sem;
+    color:gray;
+}
+input[type=checkbox]{
+    display:none;
+}
+input[type=checkbox] + label{
+    cursor:pointer;
+    margin-top: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+label:before{
+    content: '';
+    background: transparent;
+    border:2px solid #45a049;
+    border-radius:5px;
+    display: inline-block;
+    height: 20px;
+    margin-right: 11px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+    margin-top: 2px;
+    text-shadow: 4px;
+}
+input[type=checkbox]:checked + label::before{
+    content:'✅';
+    font-size-adjust:initial ;
+    background-color: #00d26a;
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+form p {
+    margin: 20px 0;
+    margin-top: 10px;
+
+}
+
+form p a {
+    color: #333;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline; 
+}

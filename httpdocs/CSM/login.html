@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion en CSM</title>
+    <link rel="stylesheet" href="./stylelogin.css">
+</head>
+<body>
+    <h1>Bienvenido<br>Inicia sesión con tu cuenta de CSM</h1>
+
+    <p id="error-message_login" style="color: red;"></p>  
+
+    <form name="login" method="post" action="/cgi-bin/login.pl" >
+        <input type="text" name="user_email" id="user_email" placeholder="Usuario o correo electronico" required>
+        <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+        <input type="submit" value="Iniciar Sesion">
+        <p><a href="contra.html">¿Olvidaste tu contraseña?</a></p>
+        <button onclick="window.location.href='/CSM/registro.html'">Registrarse</button> 
+    </form>
+    <script src="js/Funciones.js"></script>
+</body>
+</html>

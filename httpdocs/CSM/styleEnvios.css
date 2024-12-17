@@ -1,0 +1,119 @@
+body {
+    display:grid;
+    background-image: url("./imgs slide/slider1.png");
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: 50%;
+    background-position: 60px;
+    background-position-y: 500px;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-color: #ffd030;
+    background-origin: padding-box;
+}
+.img1{
+margin:0;
+margin-left: 840px;
+}
+
+h1 {
+    color: #333; 
+    margin-left: -100px;
+    text-align: center;
+}
+#nombres{
+    margin: 20px 0;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    box-sizing: border-box; 
+}
+#apellidos{
+    margin: 20px 0;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    box-sizing: border-box; 
+}
+#descripcion{
+    margin: 20px 0;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    box-sizing: border-box; 
+}
+
+#origen{
+    margin: 20px 0;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    box-sizing: border-box; 
+}
+#destino{
+    margin: 20px 0;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    box-sizing: border-box; 
+}
+.Monto{
+    border: none; 
+    color: rgb(255, 255, 255); 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    display: inline-flex;
+}
+.Monto {background-color: #f44336;} 
+.Monto:hover {background: #da190b;}
+
+#monto-estimado{
+    margin: 15px 0;
+    padding: 10px;
+    width: calc(90% - 20px); 
+    box-sizing:border-box; 
+    background-color: rgb(143, 231, 247); 
+    border-radius: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.confirmar{
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 12px 24px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    display: inline-flex;
+    padding-inline-start:30px;
+    padding-inline-end: 30px;
+}
+.confirmar {background-color: #22f561;} 
+.confirmar:hover {background: #4165ca;}
+
+.cerrar{
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 12px 24px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    display: inline-flex;
+    padding-inline-start:30px;
+    padding-inline-end: 30px;
+    margin-top: 2px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+}
+.cerrar {background-color: #60d2ff;} 
+.cerrar:hover {background: #61ca41;}
+form {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(43, 23, 23, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin-left: 510px;
+    margin-top: -410px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar un envio</title>
+    <link rel="stylesheet" href="./styleEnvios.css">
+</head>
+<body>
+    <h1>Realizar un nuevo envio</h1>
+    <div class="img1">
+    <img src="./imgs slide//fecha-servicio-entrega-mensajeria-envio-camiones-telefono-inteligente-movil-sobre-fondo-azul_420121-.png" />
+    </div>
+    <form id="formulario" action="/cgi-bin/cliente.pl" method="post" onsubmit="return confirmarEnvio()">
+        <!-- Campo oculto para el usuario_id que se extraerá de la URL -->
+        <input type="hidden" name="usuario_id" id="usuario_id" value="">
+        <input type="hidden" name="costo" id="costo" value="">
+
+        <input type="text" name="nombres" id="nombres" placeholder="Ingrese Nombres" required>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese Apellidos" required>
+
+        <label for="descripcion">Descripción del Envío:</label>
+        <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese una descripción" required>
+
+        <label for="origen">Origen:</label>
+        <select id="origen" name="origen" required>
+            <option value="" disabled selected hidden>Seleccionar origen</option>
+            <option value="arequipa">Arequipa</option>
+            <option value="camana">Camana</option>
+            <option value="caraveli">Caraveli</option> 
+            <option value="castilla">Castilla</option>
+            <option value="caylloma">Caylloma</option>
+            <option value="condesuyos">Condesuyos</option>
+            <option value="islay">Islay</option>
+            <option value="la_union">La Union</option>
+        </select>
+
+        <label for="destino">Destino:</label>
+        <select id="destino" name="destino" required>
+            <option value="" disabled selected hidden>Seleccionar destino</option>
+            <option value="arequipa">Arequipa</option>
+            <option value="camana">Camana</option>
+            <option value="caraveli">Caraveli</option> 
+            <option value="castilla">Castilla</option>
+            <option value="caylloma">Caylloma</option>
+            <option value="condesuyos">Condesuyos</option>
+            <option value="islay">Islay</option>
+            <option value="la_union">La Union</option>
+        </select>
+
+        <button type="button"  class="Monto" onclick="calcularMonto()">Calcular Monto</button> <br>
+ 
+        <!-- Botón de Confirmar Envío siempre visible -->
+        <button class="confirmar" type="submit" onclick="return confirmarEnvio()">Confirmar Envío</button>
+        <div id="monto-estimado" ></div>
+        <hr>
+        <a href="/cgi-bin/logout.pl" class="cerrar">Cerrar Sesión</a>
+    </form>
+
+
+    <script src="js/envios.js"></script>
+</body>
+</html>

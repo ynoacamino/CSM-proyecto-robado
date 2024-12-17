@@ -1,0 +1,109 @@
+body{
+    background-image: url('https://www.beetrack.com/hubfs/calcular%20ruta%20google%20maps.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 100;
+    font-family: Arial, sans-serif;
+    
+}
+h1 {
+    background-color: rgb(81, 204, 235);
+    font-size: 40px;
+    margin: 100;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#seguimientoForm label{
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+
+}
+
+#seguimientoForm button {
+    background-color: #45a049;
+    text-align: center;
+    margin: 5px auto;
+    display: block; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+#seguimientoForm button:hover {
+    background-color: #3e8e41; 
+}
+
+
+#resultado {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-size: 18px;
+    color: #666; 
+}
+
+a{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#numero_seguimiento{
+    resize: none;
+    border: 1;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: normal;
+    outline: none;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 50px;
+    margin-left: 30%;
+    padding-inline-start: 10px;
+    padding-inline-end: 75px;
+    border-radius: 100px;
+    padding-left: -200px;
+    line-height: 40px;
+    font-family: arial, sans-serif;
+    overflow-x: hidden;
+    font-size: 15px;
+    flex: 100%;
+    width: 560px;
+    height: 45px;
+    pointer-events: auto;
+}
+.regresa{
+    border: none; 
+    color: rgb(255, 255, 255); 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    display: inline-flex;
+    background-color: rgba(9, 11, 134, 0.9); 
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: 46%;
+}
+.regresa:hover{
+    background-color: #45a049;
+}
